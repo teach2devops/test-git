@@ -10,7 +10,7 @@ pipeline {
         }
         stage ("create directory") {
             steps {
-                sh "mkdir /tmp/data"
+                sh "mkdir /tmp/data1"
             }
         }
         stage (" Action") {
