@@ -15,7 +15,7 @@ pipeline {
         }
         stage (" Action") {
             steps {
-                echo "Terraform action is --> ${action}"
+                echo "Selected option is --> ${action}"
                  
            }
         }
