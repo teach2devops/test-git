@@ -18,5 +18,6 @@ pipeline {
                 echo "Terraform action is --> ${action}"
                  
            }
-        }  
+        }
+    }
 }
