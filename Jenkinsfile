@@ -2,22 +2,25 @@ pipeline {
     agent any
 
     stages {
-        stage('OS Version') {
+        stage('checkout data from Jenkinsfile') {
             steps {
-                echo 'Terraform version..'
-                sh "cat /etc/*release"
+                echo 'Downloaded the data from git'
             }
         }
-        stage ("create directory") {
+        stage('Buid') {
             steps {
-                sh "mkdir /tmp/data1"
+                echo 'buid stage'
             }
         }
-        stage (" Action") {
+        stage('Test') {
             steps {
-                echo "Selected option is --> ${action}"
-                 
-           }
+                echo 'Test stage'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploy stage'
+            }
         }
     }
 }
