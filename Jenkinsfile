@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Option choosen $action'
+                echo "Selected option is --> ${action}"
             }
         }
     }
